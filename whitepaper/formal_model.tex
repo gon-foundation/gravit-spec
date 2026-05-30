@@ -1,0 +1,12 @@
+Definition 1 (Epistemic Commitment).  
+A tuple C = (H, P, T, σ) where:
+- H: model state hash
+- P: provenance root
+- T: inference trace
+- σ: signature over (H,P,T)
+
+Definition 2 (Semantic Validity).  
+A transaction T is semantically valid iff there exists a continuous chain of inference from user intent to execution, verifiable via zero-knowledge proof.
+
+Definition 3 (Truth Vector).  
+TV = (P(valid), P(invalid), P(need_review)) computed via cross-entropy over validator hypotheses.
